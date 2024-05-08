@@ -143,7 +143,7 @@ public class VITdost {
     var SocketIOAdapter = ot.SocketIOAdapter;
     var CodeMirrorAdapter = ot.CodeMirrorAdapter;
 
-    var socket = io.connect('https://vitdost.onrender.com');
+    var socket = io.connect('https://project-3vo7.onrender.com');
     socket.emit('joinRoom', { room: "{{roomId}}", username: "{{req.user.name}}" });
     var editor = CodeMirror.fromTextArea(document.getElementById("code-screen"), {
         lineNumbers: true,
